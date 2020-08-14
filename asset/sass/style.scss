@@ -1,0 +1,31 @@
+@import './variables';
+@import './mixin';
+@import './attribution';
+@import './layout';
+@import './responsive';
+//global
+a
+{
+    text-decoration: none;
+    color: $neutral-2;
+}
+body
+{
+    font-family: $body;
+    background-color: $color-1;
+}
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.btn 
+{
+    background-image: linear-gradient(left,$color-5, $color-6);
+    color: $neutral-1;
+    font-size: $font-size-5;
+    border-radius: $border-radius-3;
+    font-family: $font;
+    box-shadow: $box-shadow-1;
+}

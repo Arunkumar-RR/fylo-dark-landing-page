@@ -1,0 +1,189 @@
+@include smartphone
+{
+    
+    nav{
+        width: 95%;
+        padding: 30px;
+        #logo
+        {
+            width: 80px;
+        }
+        .nav-item
+        {
+            font-size: $font-size-5;
+            margin: 0 5px;
+        }
+       
+    }
+    main
+    {
+        #hero-container
+        {
+            background-image: url(../images/bg-curvy-mobile.svg);
+            background-size:contain;
+            .hero-container
+            {
+                @include flex(column,center,flex-start,wrap);
+                max-width: 95%;
+                width: 95%;
+            
+                #intro-image
+                {
+                    width: 300px;
+                    height: 250px;
+                }
+                .intro-heading
+                {
+                    font-size: 24px;
+                    width: 95%;
+                    max-width: 500px;
+                    line-height: 1.5em;
+                }
+                .intro-content
+                {
+                    font-size: 15px;
+                    width: 95%;
+                    max-width: 400px;
+                    padding: 0;
+                    line-height: 1.5em;
+                }
+                .intro-btn
+                {
+                    padding: 15px 70px;
+                    margin: 10px 0 0 0;
+                }
+            }
+        }
+        #feature
+        {
+            .feature-container
+            {
+                width: 95% ;
+                .feature
+                {
+                    max-width:400px;
+                    margin: 20px;
+                 
+                }
+            }
+        }
+        #works
+        {
+            .works-container
+            {
+                
+                width: 95%;
+                @include flex(column,center,center,wrap);
+                padding: 50px 0;
+                .works-img
+                {
+                    width: 95%;
+                    max-width: 300px;
+                    margin: 0 ;
+                }
+                .works-description
+                {
+                    width: 95%;
+                    max-width: 500px;
+                    margin: 10px 0 0 40px;
+                    .heading
+                    {
+                        width: 95%;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        #feedback
+        {
+            .feedback-container
+            {
+                width: 95%;
+                margin: 0 auto;
+                padding-bottom:10px ;
+                @include flex(column,space-around,center,wrap);
+                background-image: none;
+                .card
+                {
+                    width: 90%;
+                    margin: 20px;   
+                }
+            }
+        }
+        #access
+        {
+            .early-access-container
+            {
+    
+                width: 90%;
+            }
+        }
+    }
+    footer
+    {
+        .footer-wrapper
+        {
+            width: 95%;
+            height: fit-content;
+            .logo
+            {
+                width: 80px;
+                margin: 0 ;
+            }
+            .footer-content
+            {
+                @include flex(column,space-around,flex-start,wrap);
+                .company-details
+                {
+                    @include flex(row,space-around,flex-start,wrap);
+                    width: 90%;
+                    .location-details
+                    {
+                        width: 90%;
+                    }
+                }
+                .company-contacts
+                {
+                    width: 90%;
+                    @include flex(column,flex-start,center,wrap);  
+                   
+                }
+                .link-container
+                {
+                    @include flex(column,flex-start,flex-start,wrap);
+                    padding: 0;
+                    width: 90% ;
+                    height:fit-content;
+                    .links-1
+                    {
+                        margin: 0 ;
+                        @include flex(column,flex-start,center,wrap);
+                        .links
+                        {
+                            margin: 10px 0 10px 0;
+                       
+                        }
+                    }
+                    .links-2
+                    {
+                        @include flex(column,flex-start,center,wrap);
+                        .links
+                        {
+                            margin: 10px 0 10px 0;
+                        
+                        }
+                    }
+                }
+                .social-links-container
+                {
+                    margin: 0 auto;
+                    a>img
+                    {
+                        margin: 0 10px;
+        
+                    }
+                }
+            }
+        }
+    }
+}

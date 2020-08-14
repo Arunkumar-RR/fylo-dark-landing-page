@@ -1,0 +1,358 @@
+nav{
+    @include flex(row,center,center,wrap);
+    width: 85%;
+    margin: 0 auto;
+    padding: 30px;
+    #logo
+    {
+        width: 150px;
+        margin: 0 auto 0 0;
+    }
+    .nav-item
+    {
+        color: $neutral-1;
+        font-size: $font-size-4;
+        margin: 0 30px;
+    }
+   
+}
+main
+{
+    #hero-container
+    {
+        background-image: url(../images/bg-curvy-desktop.svg);
+        background-size:100% 40% ;
+        background-position:bottom;
+        background-repeat: no-repeat;
+        .hero-container
+        {
+            @include flex(column,center,flex-start,wrap);
+            max-width: 90%;
+            width: 80%;
+            margin: 0 auto;
+            color: $neutral-1;
+            text-align: center;
+            padding: 40px 0;
+        
+            #intro-image
+            {
+                width: 60%;
+                max-width: 550px;
+                height: 400px;
+            }
+            .intro-heading
+            {
+                font-size: $font-size-2;
+                width: 50%;
+                max-width: 600px;
+                margin: 40px 0 20px;
+                line-height: 1.8em;
+            }
+            .intro-content
+            {
+                font-size: $font-size-4;
+                width: 62%;
+                max-width: 650px;
+                padding: 0px 120px 30px 120px;
+                line-height: 1.5em;
+            }
+            .intro-btn
+            {
+                padding: 15px 70px;
+                margin: 0 0 100px 0;
+            }
+        }
+    }
+    #feature
+    {
+        background-color: $color-2 ;
+        .feature-container
+        {
+            @include flex(row,center,center,wrap);
+            width: 75% ;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            color: $neutral-1;
+            .feature
+            {
+                @include flex(column,center,center,wrap);
+                max-width:400px;
+                padding: 10px;
+                margin: 40px 20px;
+                .feature-heading{
+                    font-size: $font-size-4;
+                    margin: 30px 0 10px;
+                    font-family: $font;
+
+                }
+                .feature-content
+                {
+                    font-size: $font-size-5;
+                    padding: 0 40px;
+                }
+            }
+        }
+    }
+    #works
+    {
+        background-color: $color-2 ;
+        .works-container
+        {
+            
+            width: 90%;
+            @include flex(row,center,center,wrap);
+            margin: 0 auto;
+            padding: 100px 0;
+            color: $neutral-1;
+            .works-img
+            {
+                width: 50%;
+                max-width: 500px;
+                margin: 0 0 0 40px;
+            }
+            .works-description
+            {
+                width: 45%;
+                max-width: 500px;
+                margin: 10px 0 0 40px;
+                .heading
+                {
+                    font-family: $font;
+                    width: 50%;
+                }
+                .content
+                {
+                    font-size: 13px;
+                    width: 80%;
+                    margin: 20px 0;
+                }
+                .link
+                {
+                    font-size: 13px;
+                    color: $color-5;
+                    padding: 5px 0;
+                    border: 1px solid transparent;
+                    border-bottom: 1px solid $color-5 ;
+                    text-decoration: none;
+                    svg
+                    {
+                        background-color: $color-5;
+                        border-radius: $border-radius-3;
+                        transform: scale(.7);
+                        position: relative;
+                        bottom: -4px;
+                    }
+                    &:hover
+                    {
+                        border: 1px solid $color-5 ;
+                        transition: all .2s ease-in;
+                    }
+                }
+            }
+        }
+    }
+    #feedback
+    {
+        background-color: $color-2 ;
+        .feedback-container
+        {
+            width: 90%;
+            max-width: 1100px;
+            padding: 100px 0;
+            margin: 0 auto;
+            @include flex(row,space-around,center,wrap);
+            background-image: url(../images/bg-quotes.png);
+            background-repeat: no-repeat;
+            background-size: 6%;
+            background-position-x: 10px;
+            background-position-y: 60px;
+            .card
+            {
+                background-color: $color-4 ;
+                width: 30%;
+                max-width: 400px;
+                padding: 40px 20px;
+                color: $neutral-1;
+                box-shadow: $box-shadow-1;
+                border-radius: $border-radius-1;
+                .feedback-content
+                {
+                    width: 100%;
+                    font-size: 14px;
+                    line-height: 1.5em;
+                }
+                .profile-details
+                {
+                    @include flex(row,flex-start,center,wrap);
+                    margin: 10px 0 0 0;
+                    .person-profile-pic
+                    {
+                       
+                        width: 35px;
+                        height: 35px;
+                        border-radius: $border-radius-3;
+                        margin: 0 10px 0 0;
+                    }
+                    .person-details
+                    {
+                        @include flex(column,flex-start,center,wrap);
+                        .name
+                        {
+
+                            font-size: 13px;
+                            margin: 0 0 5px;
+                            font-family: $font;
+                            font-weight: map-get($map: $font-weight, $key:bold );
+                        }
+                        .position
+                        {
+                            font-size:10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #access
+    {
+        background-color: $color-2 ;
+        min-height: 40vh;
+        .early-access-container
+        {
+
+            width: 50%;
+            max-width: 700px;
+            min-height: 220px;
+            border-radius: $border-radius-2;
+            padding: 20px 10px;
+            margin: 0 auto;
+            text-align: center;
+            color: $neutral-1;
+            background-color: $color-1;
+            box-shadow: $box-shadow-2;
+            position: relative;
+            top: 100px;
+            .heading{
+                font-family: $font;
+                margin: 10px 0 0 0;
+            }
+            .content
+            {
+                font-size: 13px;
+                margin: 10px 30px 20px;
+            }
+            form
+            {
+                width: 85%;
+                margin: 30px auto 0;
+                @include flex(row,flex-start,center,wrap);
+                #email
+                {
+                    width: 70%;
+                    flex-grow: 1;
+                    padding: 10px;
+                    margin: 10px 5px;
+                    border-radius: $border-radius-3;
+                    border: none;
+                }
+                ::placeholder
+                {
+                    padding: 0 10px;
+                    color: lightgray;
+                }
+                .access-btn
+                {
+                    flex-grow: 1;
+                    padding: 10px 15px;
+                    margin: 10px ;
+                }
+            }
+        }
+    }
+}
+footer
+{
+    background-color: $color-3;
+    .footer-wrapper
+    {
+        width: 90%;
+        max-width:  1200px;
+        margin: 0 auto;
+        padding: 150px 50px 10px;
+        @include flex(column,flex-start,center,wrap);
+        .logo
+        {
+            margin: 0 0 0 40px;
+        }
+        .footer-content
+        {
+            color: $neutral-1;
+            @include flex(row,space-around,flex-start,wrap);
+            margin: 50px  0 0;
+            .company-details
+            {
+                @include flex(row,space-around,flex-start,wrap);
+                font-size: $font-size-4;
+                width: 30%;
+                .location-details
+                {
+                    width: 90%;
+                    font-size: 13px;
+                }
+            }
+            .company-contacts
+            {
+                width: 20%;
+                @include flex(column,flex-start,center,wrap);  
+                small
+                {
+                    @include flex(row,flex-start,center,wrap);  
+                    margin: 5px 0;
+                    font-size: 13px;
+                    svg
+                    {
+                        transform: scale(.6);
+                    }
+                }
+            }
+            .link-container
+            {
+                @include flex(row,flex-start,flex-start,wrap);
+                padding: 0;
+                width: 25% ;
+                height: 200px;
+                .links-1
+                {
+                    margin: 0 40px;
+                    @include flex(column,flex-start,center,wrap);
+                    .links
+                    {
+                        margin: 0 0 10px 0;
+                        color: $neutral-1;
+                        font-size: 13px;
+                    }
+                }
+                .links-2
+                {
+                    @include flex(column,flex-start,center,wrap);
+                    .links
+                    {
+                        margin: 0 0 10px 0;
+                        color: $neutral-1;
+                        font-size: 13px;
+                    }
+                }
+            }
+            .social-links-container
+            {
+
+                a>img
+                {
+                    margin: 0 10px;
+    
+                }
+            }
+        }
+    }
+}
